@@ -20,6 +20,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        let storyboard = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        
+        self.navigationController?.pushViewController(storyboard, animated: true)
     }
     
 }
