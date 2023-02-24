@@ -23,6 +23,9 @@ class ViewController: UIViewController {
         
         let storyboard = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
         
+        storyboard.email = emailText.text!
+        storyboard.password = pswdText.text!
+        
         self.navigationController?.pushViewController(storyboard, animated: true)
     }
     
